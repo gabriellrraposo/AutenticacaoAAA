@@ -54,20 +54,20 @@ programa
     			se (autenticacao_token(token, token_auth)) {
     				escreva("\nAcesso permitido!")
 
-    				log_servidor_accounting("log_login.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Login Permitido")
+    				log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Login Permitido")
 
     				tela_gerente()
     			} senao {
     				escreva("Acesso negado!")
 
-				log_servidor_accounting("log_login.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Token Negado")
+				log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Token Negado")
     				
     				menu_principal()
     			}
 		} senao {
 			escreva("Acesso negado!")
 
-			log_servidor_accounting("log_login.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha, " - Usuário e Senha negados")
+			log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha, " - Usuário e Senha negados")
 			
 			menu_principal()
 		}
@@ -93,20 +93,20 @@ programa
     			se (autenticacao_token(token, token_auth)) {
     				escreva("\nAcesso permitido!")
 
-    				log_servidor_accounting("log_login.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Login Permitido")
+    				log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Login Permitido")
 
     				tela_cliente()
     			} senao {
     				escreva("Acesso negado!")
 
-				log_servidor_accounting("log_login.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Token Negado")
+				log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Token Negado")
     				
     				menu_principal()
     			}
 		} senao {
 			escreva("Acesso negado!")
 
-			log_servidor_accounting("log_login.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha, " - Usuário e Senha negados")
+			log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha, " - Usuário e Senha negados")
 			
 			menu_principal()
 		}
@@ -132,20 +132,20 @@ programa
     			se (autenticacao_token(token, token_auth)) {
     				escreva("\nAcesso permitido!")
 
-    				log_servidor_accounting("log_login.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Login Permitido")
+    				log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Login Permitido")
 
     				tela_tecnico()
     			} senao {
     				escreva("Acesso negado!")
 
-				log_servidor_accounting("log_login.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Token Negado")
+				log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Token Negado")
     				
     				menu_principal()
     			}
 		} senao {
 			escreva("Acesso negado!")
 
-			log_servidor_accounting("log_login.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha, " - Usuário e Senha negados")
+			log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha, " - Usuário e Senha negados")
 			
 			menu_principal()
 		}
@@ -191,12 +191,12 @@ programa
 		escolha (opcao) {
 			caso 1: 
 				escreva("A senha do cofre é: 3487fdhaGDFSG4f3%&wsf!@gfd*?ASe\n")
-				log_servidor_accounting("log_atividade.txt", "O usuário adm verificou a senha do cofre", " VERIFICAÇÃO NECESSÁRIA")
+				log_servidor_accounting("servidor_accounting.txt", "O usuário adm verificou a senha do cofre", " VERIFICAÇÃO NECESSÁRIA")
 				tela_gerente()
 				pare
 			caso 2:
 				escreva("O saldo do banco é de R$ 103.892.129.807,00\n")
-				log_servidor_accounting("log_atividade.txt", "O usuário adm verificou o saldo do banco", " VERIFICAÇÃO NECESSÁRIA")
+				log_servidor_accounting("servidor_accounting.txt", "O usuário adm verificou o saldo do banco", " VERIFICAÇÃO NECESSÁRIA")
 				tela_gerente()
 				pare
 			caso 3:
@@ -223,12 +223,12 @@ programa
 		escolha (opcao) {
 			caso 1: 
 				escreva("Seu saldo: R$ 17254,98\n")
-				log_servidor_accounting("log_atividade.txt", "O usuário cliente verificou seu saldo bancário", " OK")
+				log_servidor_accounting("servidor_accounting.txt", "O usuário cliente verificou seu saldo bancário", " OK")
 				tela_cliente()
 				pare
 			caso 2:
 				escreva("CDB: 897,78\nTesouro Direto: 1982,12\n")
-				log_servidor_accounting("log_atividade.txt", "O usuário cliente verificou sua lista de investimentos", " OK")
+				log_servidor_accounting("servidor_accounting.txt", "O usuário cliente verificou sua lista de investimentos", " OK")
 				tela_cliente()
 				pare
 			caso 3:
@@ -255,12 +255,12 @@ programa
 		escolha (opcao) {
 			caso 1: 
 				escreva("Usuário: adm | Senha: adm164\nUsuário: cliente | Senha: cliente122\nUsuário: tech | Senha: tech123")
-				log_servidor_accounting("log_atividade.txt", "O usuário tech verificou a lista de usuários", " OK")
+				log_servidor_accounting("servidor_accounting.txt", "O usuário tech verificou a lista de usuários", " OK")
 				tela_tecnico()
 				pare
 			caso 2:
 				escreva("NENHUMA VULNERABILIDADE ENCONTRADA\n")
-				log_servidor_accounting("log_atividade.txt", "O usuário tech verificou se havia alguma vulnerabilidade", " OK")
+				log_servidor_accounting("servidor_accounting.txt", "O usuário tech verificou se havia alguma vulnerabilidade", " OK")
 				tela_tecnico()
 				pare
 			caso 3:
@@ -284,8 +284,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 6471; 
- * @DOBRAMENTO-CODIGO = [36, 75, 114, 153, 180, 244];
+ * @POSICAO-CURSOR = 8102; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
