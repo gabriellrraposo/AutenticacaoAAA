@@ -1,0 +1,10 @@
+Nome de usuário digitado: adm | Senha Digitada: adm164 | Token digitado: 164 - Login Permitido
+O usuário adm verificou a senha do cofre VERIFICAÇÃO NECESSÁRIA
+O usuário adm verificou o saldo do banco VERIFICAÇÃO NECESSÁRIA
+Nome de usuário digitado: cliente | Senha Digitada: cliente122 | Token digitado: 122 - Login Permitido
+O usuário cliente verificou seu saldo bancário OK
+O usuário cliente verificou sua lista de investimentos OK
+Nome de usuário digitado: tech | Senha Digitada: tech123 | Token digitado: 123 - Login Permitido
+O usuário tech verificou a lista de usuários OK
+O usuário tech verificou se havia alguma vulnerabilidade OK
+Nome de usuário digitado: adm | Senha Digitada: adm164 | Token digitado: 164 - Login Permitido

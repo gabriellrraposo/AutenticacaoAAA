@@ -52,7 +52,7 @@ programa
     			leia(token)
     			imp_Tela("#",50)
     			se (autenticacao_token(token, token_auth)) {
-    				escreva("\nAcesso permitido!")
+    				escreva("\nAcesso permitido!\n")
 
     				log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Login Permitido")
 
@@ -91,7 +91,7 @@ programa
     			leia(token)
     			imp_Tela("#",50)
     			se (autenticacao_token(token, token_auth)) {
-    				escreva("\nAcesso permitido!")
+    				escreva("\nAcesso permitido!\n")
 
     				log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Login Permitido")
 
@@ -117,7 +117,7 @@ programa
     		
     		limpa()
     		imp_Tela("#",50)
-    		escreva("\n Login Gerente do Banco Inter\n")
+    		escreva("\n Login Técnico do Banco Inter\n")
     		imp_Tela("-",50)
     		escreva("\nDigite o nome de usuário: ")
     		leia(usuario)
@@ -130,7 +130,7 @@ programa
     			leia(token)
     			imp_Tela("#",50)
     			se (autenticacao_token(token, token_auth)) {
-    				escreva("\nAcesso permitido!")
+    				escreva("\nAcesso permitido!\n")
 
     				log_servidor_accounting("servidor_accounting.txt", "Nome de usuário digitado: " + usuario + " | " + "Senha Digitada: " + senha + " | " + "Token digitado: " + token, " - Login Permitido")
 
@@ -254,7 +254,7 @@ programa
 
 		escolha (opcao) {
 			caso 1: 
-				escreva("Usuário: adm | Senha: adm164\nUsuário: cliente | Senha: cliente122\nUsuário: tech | Senha: tech123")
+				escreva("\nUsuário: adm | Senha: adm164\nUsuário: cliente | Senha: cliente122\nUsuário: tech | Senha: tech123")
 				log_servidor_accounting("servidor_accounting.txt", "O usuário tech verificou a lista de usuários", " OK")
 				tela_tecnico()
 				pare
@@ -284,7 +284,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 8102; 
+ * @POSICAO-CURSOR = 1055; 
+ * @DOBRAMENTO-CODIGO = [36, 75, 114, 153, 180, 212, 244];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
